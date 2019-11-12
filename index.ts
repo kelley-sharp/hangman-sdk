@@ -3,7 +3,7 @@ import Hangman from './hangman';
 
 const BASE_URL = 'https://hangman-icvkxzslem.now.sh';
 
-async function start() {
+async function main() {
   try {
     const gameId = process.argv[2] || null;
     const guess = process.argv[3];
@@ -43,6 +43,4 @@ async function start() {
   }
 }
 
-// main();
-
-start();
+main();

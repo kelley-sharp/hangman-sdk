@@ -1,12 +1,6 @@
 import { AxiosInstance } from 'axios';
 import axios from 'axios';
 
-type APIError = {
-  status: number;
-  title: string;
-  message: string;
-};
-
 class Hangman {
   public gameId: string;
   private api: AxiosInstance;
