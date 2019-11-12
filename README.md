@@ -20,16 +20,16 @@ Makes a new guess! `:letter` is case insensitve, but must be a single letter. Du
 
 #### Response object
 
-| key                      | type               | description                                                        |
-| ------------------------ | ------------------ | ------------------------------------------------------------------ |
-| `game.id`                | `string`           | Game ID                                                            |
-| `game.blanks`            | `(string\|null)[]` | Array of letters that make up the word. Null indexes are blank     |
-| `game.guesses`           | `string[]`         | An array of letters that have already been guessed                 |
-| `game.incorrect_guesses` | `string[]`         | An array of incorrect letters that have been guessed               |
-| `game.word`              | `string`           | The solution! Only included if the game is lost or won already     |
-| `lost`                   | `boolean`          | You made too many incorrect guesses and lost.                      |
-| `won`                    | `boolean`          | You won!                                                           |
-| `error`                  | `string`           | If the response is not successful, this includes the error details |
+| key                      | type                | description                                                        |
+| ------------------------ | ------------------- | ------------------------------------------------------------------ |
+| `game.id`                | `string`            | Game ID                                                            |
+| `game.blanks`            | `(string\|null)[]`  | Array of letters that make up the word. Null indexes are blank     |
+| `game.guesses`           | `string[]`          | An array of letters that have already been guessed                 |
+| `game.incorrect_guesses` | `string[]`          | An array of incorrect letters that have been guessed               |
+| `game.word`              | `string`            | The solution! Only included if the game is lost or won already     |
+| `lost`                   | `boolean`           | You made too many incorrect guesses and lost.                      |
+| `won`                    | `boolean`           | You won!                                                           |
+| `error`                  | `string`            | If the response is not successful, this includes the error details |
 
 When you make a successful guess, the `game.blanks` key will include an updated array with the correctly guessed letter in the right place of the array.
 
